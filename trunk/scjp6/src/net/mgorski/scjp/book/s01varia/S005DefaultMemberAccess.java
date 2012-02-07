@@ -1,5 +1,7 @@
 package net.mgorski.scjp.book.s01varia;
 
+import net.mgorski.scjp.book.s01varia.subpackage.S005DifferentPackage;
+
 public class S005DefaultMemberAccess {
 
     public void testPublic() {
@@ -11,26 +13,42 @@ public class S005DefaultMemberAccess {
     private void testPriv() {
     };
 
-    void testDefault() {
+    
+    void /* default access */ testDefault() {
     };
+    
+    public static void main(String[] args) {
+        S005DifferentPackage o = new S005DifferentPackage();
+//        o.defaultMember(); // WRONG, default acces and different package!
+    }
 }
 
+
+
+
+class ExtSubpakcage extends S005DifferentPackage{
+    public void sth(){
+//        defaultMember(); // cannot be called neither (different package)
+        S005DefaultMemberAccess o = new S005DefaultMemberAccess();
+        o.testProtect(); // also ok, because the same package!
+    }
+}
 class Extension extends S005DefaultMemberAccess {
 
     @Override
     void testDefault() {
-        // TODO Auto-generated method stub
-        super.testDefault();
+        super.testDefault(); // ok, because the same package
     }
 
     @Override
     protected void testProtect() {
-        // TODO Auto-generated method stub
         super.testProtect();
     }
 
     protected int testPriv() {
         return 0;
     } // OK!
+    
+    
 
 }

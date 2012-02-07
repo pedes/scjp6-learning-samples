@@ -1,7 +1,7 @@
 package net.mgorski.scjp.book.s01varia;
 
 
-public class S001Identifiers {
+class S001Identifiers {
 
     /**
      * @param args
@@ -30,6 +30,7 @@ public class S001Identifiers {
          *      goto
          * 
          */
+        System.out.println("-");
     }
     
     class JavaBeanClass {
