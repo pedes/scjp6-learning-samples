@@ -1,15 +1,23 @@
 package net.mgorski.scjp.book.s01varia;
 
-public class S002ClassAccess {
+import net.mgorski.scjp.book.s01varia.subpackage.S002Subclass;
 
+public class S002ClassAccess {
+    public static void main(String[] args) {
+        S002Subclass sub = new S002Subclass(); // requires import of subpackage
+    }
 }
 
 // default access
 class Ass {
+    
 }
 
 class A {
-};
+    void method(){}
+    void method2(){};// semicolon
+    
+}; // senucikib
 
 final class B {
 }
