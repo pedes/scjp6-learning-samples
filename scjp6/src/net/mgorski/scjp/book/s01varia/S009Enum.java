@@ -1,6 +1,6 @@
 package net.mgorski.scjp.book.s01varia;
 
-public enum S009Enum {
+/* don't have to be public*/enum S009Enum {
 
     BIG(10), SMALL(5) {
         @Override
@@ -25,3 +25,6 @@ public enum S009Enum {
     }
 
 }
+
+
+

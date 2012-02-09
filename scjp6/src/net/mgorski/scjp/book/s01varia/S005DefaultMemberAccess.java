@@ -48,7 +48,29 @@ class Extension extends S005DefaultMemberAccess {
     protected int testPriv() {
         return 0;
     } // OK!
-    
-    
-
 }
+
+
+abstract class ClassA {
+    protected abstract  void  doSth();
+    public synchronized void sthSync(){
+        
+    }
+}
+
+abstract class ClassB extends ClassA{
+// abstract void doSth();   // optional
+    
+}
+
+class ClassC extends ClassA {
+    
+    // cannot decrease visibility 
+    
+    @Override
+    protected void doSth() {
+        // impl
+    }
+}
+
+

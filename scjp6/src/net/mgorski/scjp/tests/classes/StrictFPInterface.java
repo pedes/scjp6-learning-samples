@@ -15,3 +15,11 @@ public interface StrictFPInterface {
 	
 }
 	
+
+interface SecondInterface{
+    
+}
+
+interface ThirdInterface extends SecondInterface,StrictFPInterface{
+    // legal!
+}

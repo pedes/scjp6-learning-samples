@@ -4,7 +4,7 @@ public class S008Static {
 
     CoffeeSize cs;
     S008Static.CoffeeSize cs2;
-    S008Static.Dupa.CoffeeSize cs3;
+    S008Static.Dupa.CoffeeSize cs3; // requires name of the enclosing class
 
     public S008Static() {
         // TODO Auto-generated constructor stub
@@ -27,14 +27,21 @@ public class S008Static {
         } // mark no semicolon, ok !!
     }
 
-    enum CoffeeSize {
+    // can be private
+   private enum CoffeeSize {
         BIG, HUGE, OVERWHELMING
-    };
+    }
+   
+   private int x;
 }
 
-enum CoffeeSize {
+/**protected cannot shrink visibility*/ enum CoffeeSize {
     BIG, HUGE, OVERWHELMING
-};
+};// optional semicolon
+
+class Bla{
+    
+}
 
 
 
