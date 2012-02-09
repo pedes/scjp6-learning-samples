@@ -35,6 +35,7 @@ public class S007LocalVariables {
     int size = 27;
     String[][][][][] occupantName;
     String[] managerName [][][];
+    
 
 
     public void setSize(int size) {

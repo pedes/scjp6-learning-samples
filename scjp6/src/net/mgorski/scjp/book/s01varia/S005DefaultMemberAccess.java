@@ -21,8 +21,11 @@ public class S005DefaultMemberAccess {
         S005DifferentPackage o = new S005DifferentPackage();
 //        o.defaultMember(); // WRONG, default acces and different package!
     }
-}
-
+    
+    public Object getObject() {
+        int[] nums = {1,2,3};
+        return nums; 
+       }
 
 
 

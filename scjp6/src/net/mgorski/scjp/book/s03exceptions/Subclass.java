@@ -2,6 +2,10 @@ package net.mgorski.scjp.book.s03exceptions;
 
 public class Subclass extends Class {
     
+    protected /*legal!*/ Subclass() {
+        // TODO Auto-generated constructor stub
+    }
+    
     @Override
     /**
      * Can be public, protected
