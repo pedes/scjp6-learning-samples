@@ -4,7 +4,7 @@ import net.mgorski.scjp.book.s01varia.subpackage.S005DifferentPackage;
 
 public class S005DefaultMemberAccess {
 
-    public void testPublic() {
+    public void testPublic() throws Exception {
     };
 
     protected void testProtect() {
@@ -74,6 +74,7 @@ class ClassC extends ClassA {
     protected void doSth() {
         // impl
     }
+}
 }
 
 
