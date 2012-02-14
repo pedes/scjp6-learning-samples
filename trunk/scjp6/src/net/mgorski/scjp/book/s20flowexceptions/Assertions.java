@@ -20,7 +20,7 @@ public class Assertions {
         
         assert (x!=3); // ok
         
-        assert (x >= 0) : "Bad condition put over x, we want it to be negative"; // print assertion
+        assert (x >= 0) : "Bad condition put over x:"+x+", we want it to be negative"; // print assertion
         
         
         

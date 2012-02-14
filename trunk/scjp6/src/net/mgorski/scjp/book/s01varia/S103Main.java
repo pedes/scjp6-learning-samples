@@ -16,7 +16,8 @@ public class S103Main {
         System.out.println(s3.VAR);
         
         System.out.println(S102Subclass.VAR);
-        System.out.println(S101Superclass.VAR);        
+        System.out.println(S101Superclass.VAR);
+        
     }
 
 }

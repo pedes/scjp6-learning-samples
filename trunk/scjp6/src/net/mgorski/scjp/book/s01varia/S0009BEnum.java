@@ -22,3 +22,12 @@ class S0009BEnum {
     }
 
 }
+
+
+class A{}; class B extens A {}:
+List<B> a1 = new List<B>();
+List<A> a2 = new ArrayList<A>();
+List<A> a3 = new ArrayList<B>();
+List<B> a4 = new ArrayList<A>();
+List<Object> a5 = new ArrayList<B>();
+ArrayList<A> a6 = new ArrayList<B>();

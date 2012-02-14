@@ -7,7 +7,12 @@ public class S005DefaultMemberAccessSamePkg {
         S005DefaultMemberAccess dm = new S005DefaultMemberAccess();
         dm.testDefault();
         dm.testProtect();
-        dm.testPublic();
+        try {
+            dm.testPublic();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 
         System.out.println("ALL ok");
     }
