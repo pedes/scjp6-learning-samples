@@ -18,6 +18,11 @@ public class S103Main {
         System.out.println(S102Subclass.VAR);
         System.out.println(S101Superclass.VAR);
         
+        
+        Number l = new Long(10);
+        l.doubleValue();
+        
+        
     }
 
 }
