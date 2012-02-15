@@ -3,8 +3,8 @@ package net.mgorski.scjp.book.s05inheritance;
 public class Apple extends Fruit {
 
     public Apple() {
-        // will not compile
-//        super();
+        super(new Object());// must be placed here
+        
         System.out.println( "apples" );   
     }
     
