@@ -2,6 +2,8 @@ package net.mgorski.scjp.book.s22collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Sorting {
     
@@ -17,6 +19,21 @@ public class Sorting {
         System.out.println(al);
         Collections.sort(al);
         System.out.println(al);
+        
+        
+        
+        System.out.println("Natural order:");
+        
+        Queue<String> q = new PriorityQueue<String>();
+        q.add("z");
+        q.add("Z");
+        q.add("5");
+        q.add("#");
+        q.add(" "); // space > hash > upper > lower > Number! 
+        
+        for (String s : q)
+            System.out.println(s);
+        
     }
     
     
