@@ -2,7 +2,7 @@ package net.mgorski.scjp.book.s24classes;
 
 import java.io.Serializable;
 
-public class InnerClasses {
+public class OuterClass {
     
     private String stringPrivate;
     protected String stringProtected;
@@ -10,7 +10,7 @@ public class InnerClasses {
     String stringDefault;
     
     
-    public InnerClasses.TypicalInnerClass createTypicalInner(){
+    public OuterClass.TypicalInnerClass createTypicalInner(){
         TypicalInnerClass tic = new TypicalInnerClass();
         tic.getSthPrivate();    // also this !
         return tic;
@@ -70,6 +70,27 @@ public class InnerClasses {
         // InnerMethodClass - no access
     }
     
+    private abstract class PrivateInnerClass {
+        
+    }
+    
+    protected class ProtectedInnerClass extends PrivateInnerClass {
+        
+        void someMethod(final int input){
+//            PrivateInMethodClass // invalid!
+            class PrivateInMethodClass {
+                private void doStuff() {
+                    
+                    System.out.println("do!"+input);
+                }
+            }
+            
+            PrivateInMethodClass pim = new PrivateInMethodClass();
+            pim.doStuff();
+            
+        }
+    }
+    
     class TypicalInnerClass {
         
         private String prv ="prv";
@@ -85,12 +106,12 @@ public class InnerClasses {
              
             // access 
             System.out.println(this.prv);
-            System.out.println(InnerClasses.this.stringDefault);    // and outer
+            System.out.println(OuterClass.this.stringDefault);    // and outer
             
             
         };
         
-        
-        
     }
+    
+    
 }

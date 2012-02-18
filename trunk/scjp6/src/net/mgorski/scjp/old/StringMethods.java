@@ -1,5 +1,11 @@
 package net.mgorski.scjp.old;
 
+import java.io.Externalizable;
+import java.text.DateFormat;
+import java.util.IdentityHashMap;
+import java.util.LinkedList;
+import java.util.List;
+
 public class StringMethods {
 	
 	
@@ -23,6 +29,20 @@ public class StringMethods {
 
 		
 		printStrings(7);
+		
+		System.out.println("----");
+		StringBuilder sb = new StringBuilder();
+		String s = null;
+		sb.append(s);
+		sb.append("123");
+//		sb.append(0,"1");
+		System.out.println(sb.toString());
+
+		List<String> l = new LinkedList<String>();
+		l.add("aaa");
+		l.add("bbb");
+		String[] array = l.toArray(new String[0]);
+		System.out.println(array.length);
 	}
 	
 	
