@@ -107,6 +107,7 @@ public class Varia extends TestCase {
     
     
     public static void main(String[] args) {
+        
         Varia s = new Varia();
         s.testConsole();
     }

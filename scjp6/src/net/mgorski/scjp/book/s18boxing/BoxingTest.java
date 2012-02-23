@@ -68,9 +68,11 @@ public class BoxingTest {
         System.out.println("-----" + (aEmpty==bEmpty) + " and " +(aEmpty.equals(bEmpty)));
         
         
+        System.out.println(shorttt(8));
     }
     
     
+    private static String shorttt(int x){ return "short"; };
     private static String go(long x){ return "wide"; };
     private static String go(Integer x){ return "box"; };
 }
