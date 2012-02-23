@@ -6,9 +6,10 @@ class S001Identifiers {
     /**
      * @param args
      */
-    public static void main(String[] args) {
+    public static void main(String ... args) {
         int _a;
         int $c;
+        int €1;
         int ______2_w;
         int _$;
         int Ł;
