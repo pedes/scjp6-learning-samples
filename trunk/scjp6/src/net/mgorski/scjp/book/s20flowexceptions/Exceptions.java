@@ -17,7 +17,7 @@ public class Exceptions {
     /**
      * @return
      */
-    private boolean returnBoolean() {
+    private boolean returnBoolean()  {
         try {
             openSocketWithError();
         } 
