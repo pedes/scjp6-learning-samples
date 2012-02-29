@@ -71,6 +71,10 @@ public class ShapesTestGenerics {
             }
         }
         
+        public static <E extends Number> List<E> process(List<E> nums){
+            return nums;
+        }
+        
     }
     
     

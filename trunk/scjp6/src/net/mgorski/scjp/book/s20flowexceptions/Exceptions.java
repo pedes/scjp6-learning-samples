@@ -21,6 +21,7 @@ public class Exceptions {
         try {
             openSocketWithError();
         } 
+        
         /*catch (Exception e){
             System.out.println("illegal here !"); // ILLEGAL HERE 
         } 
@@ -29,9 +30,7 @@ public class Exceptions {
             System.out.println("Socket failed");
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            System.out.println("close socket");
-        }
+        
         
         try {
             openSocket();

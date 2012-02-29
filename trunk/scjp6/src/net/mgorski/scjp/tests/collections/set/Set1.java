@@ -1,5 +1,14 @@
 package net.mgorski.scjp.tests.collections.set;
 
-public class Set1 {
+import java.util.Set;
+import java.util.TreeSet;
 
+public class Set1 {
+    
+    public static void main(String[] args) {
+    
+        Set s = new TreeSet();
+        s.iterator();
+    }
+    
 }
