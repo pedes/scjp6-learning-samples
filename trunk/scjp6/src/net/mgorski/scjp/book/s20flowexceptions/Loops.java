@@ -100,7 +100,7 @@ public class Loops extends TestCase {
         }
         
        int k = 0;
-       for(;k<3;){
+       for(;k<3; System.out.println("k !!")){
            System.out.println("for-while =" + k++);
        }
        

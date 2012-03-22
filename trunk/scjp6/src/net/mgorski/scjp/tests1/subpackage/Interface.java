@@ -1,6 +1,6 @@
 package net.mgorski.scjp.tests1.subpackage;
 
-public interface Interface {
+public strictfp interface Interface {
     
     public static final int HU = 1;
     
