@@ -1,16 +1,50 @@
 package net.mgorski.scjp.test2;
 
-class OuterClass {
+class OuterClass  {
     
-    private int x;
-    public static class StaticInnerClass {
+    private transient int x;
+    private static int xStatic;
+    
+    // anonymous inner class implemented outside inner method/class
+    private Runnable r = new Runnable() {
+        
+//        public Runnable(){ // cannot define constructor
+//            
+//        }
+        
+        @Override
+        public void run() {
+            
+            
+        }
+    };
+    
+    public static class StaticInnerClass extends OuterClass {
 //        x=2;// bad!
+        
+        static void bla() throws Exception { //static method ok
+            xStatic = 3;
+            
+        }
+    }
+    
+    private void outerMethod(){
+         class AnonymousOuter extends StaticInnerClass {
+            public AnonymousOuter(int x) {
+            }
+            
+            void x(){}// not allowed
+        }
+        
+        AnonymousOuter ao = new AnonymousOuter(2); 
     }
 
-    private final class InnerClass {
+    private final class InnerClass extends OuterClass  {
         public InnerClass() {
             x = 23; // ok
         }
+        
+//        static void n(){}
     }
 
     public static void main(String[] args) {
@@ -20,6 +54,19 @@ class OuterClass {
         
         oc.new InnerClass(); // ok
         System.out.println(oc.x);
+        
+        
+        class InMethod {
+            
+        }
+        
+       class InMethodExtension extends InMethod {
+            
+            /*static cannot be static!!!*/ void method(){
+                
+            }
+            
+        }
     }
 
 }
