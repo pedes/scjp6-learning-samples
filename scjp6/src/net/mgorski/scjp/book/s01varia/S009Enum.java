@@ -26,6 +26,11 @@ package net.mgorski.scjp.book.s01varia;
 
 }
 
+
+enum CasualEnum {
+    A,B,C;
+}
+
 class Sth {
     public enum Suits {
         CLUBS(20), DIAMONDS(20), HEARTS(30), SPADES(30), NOTRUMP(40) {
