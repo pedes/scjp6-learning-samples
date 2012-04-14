@@ -3,6 +3,7 @@ package net.mgorski.scjp.tests.collections;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NavigableSet;
+import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -33,6 +34,18 @@ public class MyNavigableSet  {
 	        for (Integer in : ss) {
 				System.out.println("SS: " + in);
 			}
+	        
+	        
+	        // treeeset
+	        TreeSet<Integer> s = new TreeSet<Integer>();
+	        s.add(0);
+	        s.add(2);
+	        s.add(4);
+	        s.add(6);
+	        Set<Integer> sss = s.subSet(0, 4);
+	        System.out.println(sss.size());
+	        s.add(3);
+	        System.out.println(sss.size());
 	        
 	    }
 

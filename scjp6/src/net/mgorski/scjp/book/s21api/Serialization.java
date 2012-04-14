@@ -109,7 +109,7 @@ class SerializeMe implements Serializable {
     }
 
     private void readObject(ObjectInputStream is) {
-        // throws IOException, ClassNotFoundException {      // 4
+//         throws IOException, ClassNotFoundException {      // 4
         try {
             is.defaultReadObject(); // 5
             this.csm = new CannotSerializeMe(is.readInt());
