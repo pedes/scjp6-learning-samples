@@ -20,6 +20,7 @@ public class NavigableMapsAndSets {
         times.add(1830);
         times.add(2010);
         times.add(2100);
+        
         // Java 5 version
         TreeSet<Integer> subset = new TreeSet<Integer>();
         subset = (TreeSet<Integer>) times.headSet(1600);
