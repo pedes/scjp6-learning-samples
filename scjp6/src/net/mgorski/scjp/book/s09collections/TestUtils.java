@@ -16,6 +16,7 @@ public class TestUtils {
         l2.add("B1");
         l2.add("B2");
         
+        // not in SCJP objective
         Collection<String> mergeCollections = Util.mergeCollections(l1, l2);
         
         System.out.println("MERGED-----");
