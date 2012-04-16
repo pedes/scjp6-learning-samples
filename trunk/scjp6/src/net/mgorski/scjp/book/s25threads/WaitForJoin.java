@@ -24,7 +24,6 @@ public class WaitForJoin {
         
         Thread.yield();
         System.out.println("Wait for a thread...");
-//        t.notify();
         try {
             t.join();
         } catch (InterruptedException e) {
