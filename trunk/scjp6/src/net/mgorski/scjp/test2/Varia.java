@@ -73,8 +73,17 @@ public class Varia {
         
         System.out.printf("h formatter 30 = %1$h\n ", 30);
         System.out.printf("month is = %1$tm\n", new Date());
+        
+        
+        
+        System.out.printf("FOrmatter: %d %b  %3$+,09d", 90,null, 8000);
 
         System.out.println("\n\n" + x + " -> " + xx + "," + Short.MAX_VALUE);
+        
+        Object[] obj = null;
+//        String  s = (String) obj; // compile time err
+        
+//        Object[] obj2 = (Object[]) new String(); // cannot cast neither
         
         
         Object [] object = new String[5][5];

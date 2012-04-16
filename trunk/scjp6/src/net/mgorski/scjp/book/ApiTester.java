@@ -63,6 +63,12 @@ public class ApiTester {
 //        float f2 = 3.2; // wrong, double
 //        method(3);
 
+        String str = "";
+        str.length();
+        
+        StringBuilder sb = new StringBuilder(" ");
+        
+        System.out.println(sb.length());
     }
     
     static void method(short b){
