@@ -2,6 +2,14 @@ package net.mgorski.scjp.test2;
 
 class OuterClass  {
     
+    public class InnerPublicClass{
+        public volatile int x;
+    }
+    
+    protected static class InnerProtectedStatic{
+        public int xy;
+    }
+    
     private transient int x;
     private static int xStatic;
     
@@ -14,6 +22,10 @@ class OuterClass  {
         
         @Override
         public void run() {
+            
+            InnerPublicClass inc = new InnerPublicClass();
+            System.out.println(inc.x);
+            
             
             
         }
@@ -63,7 +75,7 @@ class OuterClass  {
        class InMethodExtension extends InMethod {
             
             /*static cannot be static!!!*/ void method(){
-                
+                InnerPublicClass ipc = new OuterClass().new InnerPublicClass();
             }
             
         }
