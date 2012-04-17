@@ -16,6 +16,7 @@ public class VariableScopingErrors {
 
     public static void main(String[] args) {
         // x=3; // 1/ illegal, x is static
+        
 
         VariableScopingErrors vs = new VariableScopingErrors();
         vs.go();
