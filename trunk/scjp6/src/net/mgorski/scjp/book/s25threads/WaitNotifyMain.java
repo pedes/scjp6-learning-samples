@@ -4,6 +4,13 @@ public class WaitNotifyMain {
 
     public static void main(String[] args) {
 
+        Thread t = new Thread();
+        t.setPriority(5);
+        System.out.println(Thread.MAX_PRIORITY);
+        System.out.println(Thread.MIN_PRIORITY);
+        
+        
+        
         String input = "lowercase!";
         ProcessText processText = new ProcessText(input);
 

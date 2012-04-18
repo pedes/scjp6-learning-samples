@@ -7,6 +7,6 @@ public interface Interface {
     
     public final static int X = 1;
 
-    void doSth() throws IOException, ParseException;
+    void  doSth() throws IOException, ParseException;
 
 }

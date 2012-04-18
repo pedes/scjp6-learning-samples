@@ -7,6 +7,7 @@ class Keyboard {
 
 public class Computer implements Serializable {
     private Keyboard k = new Keyboard();
+    
 
     public static void main(String[] args) {
         Computer c = new Computer();
