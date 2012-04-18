@@ -31,6 +31,7 @@ public class ShapesTestGenerics {
         LinkedList<? extends Shape> circles3 = new LinkedList<Circle>(); // ok but not allowed Circle
         
         
+        
         LinkedList<? super Triangle> triangles = new LinkedList<Triangle>();
 //        triangles.add(new Shape());   // still wrong !
         triangles.add(new Triangle());

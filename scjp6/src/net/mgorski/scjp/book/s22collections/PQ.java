@@ -1,7 +1,9 @@
 package net.mgorski.scjp.book.s22collections;
 
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.Queue;
 
 class PQ {
     
@@ -38,5 +40,22 @@ class PQ {
         System.out.println("size _" + pq2.size());
         for(int x : ia) // review queue
         System.out.print(pq2.poll() + " ");
+        
+        
+        Collection<String> coll = new PriorityQueue<String>();
+        ((Queue<String>) coll).add("a");
+        ((Queue<String>) coll).add("b");
+        ((Queue<String>) coll).add("c");
+        
+        System.out.println("\n\nContains a?="+coll.contains("a"));
+        Queue q = (Queue) coll;
+        System.out.println(q.poll());
+        System.out.println(q.poll());
+        System.out.println(q.poll());
+        System.out.println(q.poll());
+        System.out.println(q.poll());
+        System.out.println(q.poll());
+        System.out.println(q.remove());
+        
     }
 }

@@ -2,6 +2,7 @@ package net.mgorski.scjp.book.s21api;
 
 import java.io.Console;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -69,6 +70,20 @@ public class Varia extends TestCase {
         
         File f = new java.io.File("file");
         System.out.println("exists?=" + f.exists());
+        
+        FileInputStream fio  = null;
+        try {
+            fio = new FileInputStream(f);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        
+
+        try {
+            PrintWriter pwww = new PrintWriter(f);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         
     }
     
