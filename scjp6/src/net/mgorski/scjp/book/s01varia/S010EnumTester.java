@@ -1,8 +1,5 @@
 package net.mgorski.scjp.book.s01varia;
 
-import com.sun.net.ssl.SSLContext;
-import com.sun.xml.internal.bind.v2.runtime.IllegalAnnotationException;
-
 import net.mgorski.scjp.book.s01varia.Sth.Suits;
 
 public class S010EnumTester {

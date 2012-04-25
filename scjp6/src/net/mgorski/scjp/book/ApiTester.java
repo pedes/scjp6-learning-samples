@@ -1,7 +1,5 @@
 package net.mgorski.scjp.book;
 
-import java.util.Arrays;
-
 public class ApiTester {
 
     class InnerClass {

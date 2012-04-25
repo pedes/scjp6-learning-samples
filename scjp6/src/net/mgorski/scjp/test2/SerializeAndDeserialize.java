@@ -41,18 +41,17 @@ public class SerializeAndDeserialize implements Serializable {
         try {
             ob2 = (SerializeAndDeserialize) new ObjectInputStream(
                     new FileInputStream("A.ser")).readObject();
+            
+            System.out.print("instance:" + ob2.a + " static:" + ob2.b + " transient:" + ob2.c
+                    + " volatile:" + ob2.c);
+            System.out.println("\n\nx1:" + ob2.x1 + " x2:" + ob2.x2);
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        System.out.print("instance:" + ob2.a + " static:" + ob2.b + " transient:" + ob2.c
-                + " volatile:" + ob2.c);
-        System.out.println("\n\nx1:" + ob2.x1 + " x2:" + ob2.x2);
+        
     }
 }

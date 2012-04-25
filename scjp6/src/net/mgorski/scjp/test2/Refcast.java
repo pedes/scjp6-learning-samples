@@ -1,6 +1,6 @@
 package net.mgorski.scjp.test2;
 
-import java.io.*;
+import java.io.Serializable;
 
 class AA {
 }

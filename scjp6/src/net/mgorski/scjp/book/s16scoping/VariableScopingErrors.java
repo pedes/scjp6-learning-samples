@@ -1,7 +1,6 @@
 package net.mgorski.scjp.book.s16scoping;
 
-import java.awt.Button;
-import java.awt.Dimension;
+import java.awt.*;
 import java.util.Date;
 
 public class VariableScopingErrors {

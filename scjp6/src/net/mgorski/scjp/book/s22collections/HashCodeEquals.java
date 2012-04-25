@@ -1,7 +1,6 @@
 package net.mgorski.scjp.book.s22collections;
 
 import java.io.Serializable;
-import java.util.Arrays;
 
 public class HashCodeEquals {
     public static void main(String[] args) {

@@ -1,11 +1,10 @@
 package net.mgorski.scjp.tests.classes;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.Serializable;
 import java.util.Date;
-
-import javax.swing.JButton;
 
 public class Class1 {
 

@@ -1,7 +1,5 @@
 package net.mgorski.scjp.test2;
 
-import java.io.File;
-
 interface Min {
 }
 

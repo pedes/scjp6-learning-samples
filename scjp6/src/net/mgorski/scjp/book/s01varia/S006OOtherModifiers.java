@@ -1,8 +1,5 @@
 package net.mgorski.scjp.book.s01varia;
 
-import org.omg.CORBA.TRANSIENT;
-
-
 public strictfp class S006OOtherModifiers {
 
     native synchronized  void methodInC(); // like abstract, no body

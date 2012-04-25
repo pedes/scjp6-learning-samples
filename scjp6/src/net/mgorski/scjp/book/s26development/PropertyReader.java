@@ -1,8 +1,8 @@
 package net.mgorski.scjp.book.s26development;
 
-import static java.lang.Integer.MAX_VALUE;
-
 import java.util.Properties;
+
+import static java.lang.Integer.MAX_VALUE;
 
 public class PropertyReader {
     public static void main(String...args) {                // <<< varargs

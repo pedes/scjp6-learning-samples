@@ -2,12 +2,8 @@ package net.mgorski.scjp.tests;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.PriorityQueue;
-import java.util.Set;
-import java.util.TreeSet;
 
 public class ListAndArrayTester {
     public static void main(String[] args) {

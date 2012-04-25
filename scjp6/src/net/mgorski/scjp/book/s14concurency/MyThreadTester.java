@@ -1,10 +1,9 @@
 package net.mgorski.scjp.book.s14concurency;
 
-import java.util.concurrent.Semaphore;
-
 import junit.framework.TestCase;
-
 import org.junit.Test;
+
+import java.util.concurrent.Semaphore;
 
 public class MyThreadTester extends TestCase {
     

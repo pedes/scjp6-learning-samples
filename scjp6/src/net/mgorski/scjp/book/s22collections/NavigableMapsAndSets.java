@@ -1,13 +1,6 @@
 package net.mgorski.scjp.book.s22collections;
 
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.NavigableSet;
-import java.util.SortedMap;
-import java.util.SortedSet;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import java.util.*;
 
 public class NavigableMapsAndSets {
     
@@ -68,7 +61,7 @@ public class NavigableMapsAndSets {
         
         map.put("b", "bat"); // #3 add to original
         submap.put("f", "fish"); // #4 add to copy
-        submap.put("br", "bóbr"); // #4 add to copy\
+        submap.put("br", "bï¿½br"); // #4 add to copy\
 //        submap.put("w", "waz"); // #4 add to copy\
         submap.put("f", "fish"); // #4 add to copy
         

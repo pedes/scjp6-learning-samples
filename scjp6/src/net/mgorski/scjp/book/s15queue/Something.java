@@ -1,11 +1,11 @@
 package net.mgorski.scjp.book.s15queue;
 
+import org.junit.Test;
+
 import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
-
-import org.junit.Test;
 
 public class Something {
 

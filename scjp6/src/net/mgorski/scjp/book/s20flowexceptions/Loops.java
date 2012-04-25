@@ -1,7 +1,6 @@
 package net.mgorski.scjp.book.s20flowexceptions;
 
 import junit.framework.TestCase;
-
 import org.junit.Test;
 
 public class Loops extends TestCase {

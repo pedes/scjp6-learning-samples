@@ -1,10 +1,9 @@
 package net.mgorski.scjp.book.s12asserts;
 
-import java.awt.Point;
-
 import junit.framework.TestCase;
-
 import org.junit.Test;
+
+import java.awt.*;
 
 public class MetricCalculator extends TestCase {
 
