@@ -1,10 +1,10 @@
 package net.mgorski.scjp.book.s20flowexceptions;
 
-import java.io.IOException;
-import java.net.SocketException;
-
 import org.junit.Ignore;
 import org.junit.Test;
+
+import java.io.IOException;
+import java.net.SocketException;
 
 public class Exceptions {
     
@@ -39,7 +39,8 @@ public class Exceptions {
         } finally {
             System.out.println("close socket");
         }
-        
+        }
+        return false;
         
     }
     

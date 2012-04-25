@@ -1,16 +1,9 @@
 package net.mgorski.scjp.book.s21api;
 
-import java.io.Console;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-
 import junit.framework.TestCase;
-
 import org.junit.Test;
+
+import java.io.*;
 
 
 public class Varia extends TestCase {

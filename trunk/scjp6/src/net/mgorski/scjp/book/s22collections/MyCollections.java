@@ -1,15 +1,6 @@
 package net.mgorski.scjp.book.s22collections;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
-import java.util.Vector;
+import java.util.*;
 
 
 public class MyCollections {
@@ -30,13 +21,13 @@ public class MyCollections {
             ht.put(1, "dupa");
             
             try {
-                ht.put(null, "knór");
+                ht.put(null, "knï¿½r");
             } catch (NullPointerException npe){
                 System.out.println("indeeed!");
             }
             
             try {
-                ht.put(1, "knór");
+                ht.put(1, "knï¿½r");
             } catch (NullPointerException npe){
                 System.out.println("even here !");
             }
@@ -111,7 +102,7 @@ public class MyCollections {
             System.out.println(hm.size());
             hm.put(null, "knur");
             System.out.println(hm.size());
-            hm.put(null, "bóbr");
+            hm.put(null, "bï¿½br");
             System.out.println(hm.size());
             System.out.println("the survivor is = "+ hm.get(null));
             

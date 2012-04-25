@@ -1,8 +1,8 @@
 package net.mgorski.scjp.book.s14concurency;
 
-import java.util.concurrent.locks.ReentrantLock;
-
 import junit.framework.TestCase;
+
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Concurency extends TestCase {
     

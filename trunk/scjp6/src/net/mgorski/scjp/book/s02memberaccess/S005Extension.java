@@ -16,6 +16,10 @@ class S005Test {
 
     public static void main(String[] args) {
         S005DefaultMemberAccess dm = new S005DefaultMemberAccess();
-        dm.testPublic(); // the only one visible
+        try {
+            dm.testPublic(); // the only one visible
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

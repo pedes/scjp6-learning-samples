@@ -1,10 +1,9 @@
 package net.mgorski.scjp.book.s19operators;
 
-import java.io.Serializable;
-
 import junit.framework.TestCase;
-
 import org.junit.Test;
+
+import java.io.Serializable;
 
 public class OperatorTest extends TestCase {
 

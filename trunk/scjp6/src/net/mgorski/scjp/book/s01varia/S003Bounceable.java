@@ -1,11 +1,10 @@
 package net.mgorski.scjp.book.s01varia;
 
-import java.io.Serializable;
-
-import org.junit.Test;
-
 import junit.framework.Assert;
 import junit.framework.TestCase;
+import org.junit.Test;
+
+import java.io.Serializable;
 
 public interface S003Bounceable {
 

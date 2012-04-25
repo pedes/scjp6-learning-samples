@@ -1,6 +1,8 @@
 package net.mgorski.scjp.book.s21api;
 
-import java.io.*;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
 class Keyboard {
 }

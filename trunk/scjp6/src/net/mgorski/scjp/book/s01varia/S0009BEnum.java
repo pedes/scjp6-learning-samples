@@ -1,9 +1,5 @@
 package net.mgorski.scjp.book.s01varia;
 
-import java.util.Map;
-
-
-
 class S0009BEnum {
 
     private enum DupaEnum { BIG, BUG } // 1
